@@ -124,3 +124,5 @@ function smallestNumber(number) {
 
   return result;
 }
+
+console.log(smallestNumber(570107));
