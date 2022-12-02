@@ -3,7 +3,7 @@ const validateObj = (obj) => {
     return true;
   }
 
-  throw new Error("Invalid obj");
+  throw new Error("Type input must object💥");
 };
 const validateArr = (arr) => {
   if (Array.isArray(arr)) return true;
@@ -15,8 +15,7 @@ const validateArr = (arr) => {
 const getKeysObj = (obj) => {
   validateObj(obj);
 
-  return Ob;
-  ject.keys(obj).join(",");
+  return Object.keys(obj).join(",");
 };
 
 // Bài 2. Viết hàm để lấy danh sách các value của object
