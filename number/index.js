@@ -83,21 +83,17 @@ const sumDivisor = (number) => {
 
 // Bài 6: Cho 1 số nguyên, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). Ví dụ với tham số 53751 thì kết quả là 13557.
 
-
 function smallestNumber(number) {
-
   let freq = Array(10).fill(0);
 
- 
   let is_pos = Boolean(number > 0);
 
   let num = Math.abs(number);
 
-
   while (num) {
-    let d = num % 10; /
+    let d = num % 10;
     freq[d]++;
-    num = parseInt(num / 10); 
+    num = parseInt(num / 10);
   }
 
   let result = 0;
@@ -128,5 +124,3 @@ function smallestNumber(number) {
 
   return result;
 }
-
-
