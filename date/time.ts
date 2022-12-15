@@ -107,12 +107,7 @@ const calculate_age = (dateInput: Date) => {
 
 console.log(calculate_age(new Date(1997, 5, 28)));
 
-// 15/12/2022 - 28/06/1997
-// 2022 - 1997 = 25 -> neu thoi gian hien tai >= ngay/thang sinh nhat -> + 1 tuoi = 26 tuoi
 
-// Neu < thang thi return age
-// Neu = thang thi xet ngay xem co >= ngay sinh nhat return a + 1
-// Neu > thang thi return age + 1
 
 // Bài 7: Viết một hàm JavaScript để lấy ngày bắt đầu của tuần.
 // let dt = new Date();
